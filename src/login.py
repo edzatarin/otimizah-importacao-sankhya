@@ -9,7 +9,7 @@ class SankhyaLogin:
         'password': "PGJdE6.dLzNgW"
     }
   
-  def get_bearer_token(self):
+  def get_bearer_token(self) -> str:
     try:
       url = 'https://api.sankhya.com.br/login'
       response = requests.post(url, headers=self.headers)
